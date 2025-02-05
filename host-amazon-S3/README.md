@@ -9,10 +9,6 @@
 
 ---
 
-![Image](http://learn.nextwork.org/easygoing_lavender_peaceful_durian/uploads/aws-host-a-website-on-s3_5d4474f9)
-
----
-
 ## Introducing Today's Project!
 
 ### What is Amazon S3
@@ -35,13 +31,13 @@ It took me less than 30 mins!
 
 ## How I Set Up an S3 Bucket
 
-Creating an S3 bucket took me less than 5 mins to create and have a good understanding of the entire set up. 
+Creating an S3 bucket took me less than 5 mins to create and have a good understanding of the entire set up.
 
 I picked Central Canada as the region because this is where I'm closest to.
 
 S3 bucket names are globally unique this means no other buckets are named after the ones you picked, unless you deleted your own then someone can use it.
 
-![Image](http://learn.nextwork.org/easygoing_lavender_peaceful_durian/uploads/aws-host-a-website-on-s3_ba6d42ad)
+![Image](./assets/SCR-20250205-nnxx.png)
 
 ---
 
@@ -49,11 +45,11 @@ S3 bucket names are globally unique this means no other buckets are named after 
 
 ### index.html and image assets
 
-I uploaded two files to my S3 bucket - they were  the index.html and a folder named NextWork - Everyone should be in a job they love_files/
+I uploaded two files to my S3 bucket - they were the index.html and a folder named NextWork - Everyone should be in a job they love_files/
 
-Both files are necessary for this project as they contain the asset files that is needed for creating the website. 
+Both files are necessary for this project as they contain the asset files that is needed for creating the website.
 
-![Image](http://learn.nextwork.org/easygoing_lavender_peaceful_durian/uploads/aws-host-a-website-on-s3_a265af88)
+![Image](./assets/SCR-20250205-nolj.png)
 
 ---
 
@@ -65,7 +61,7 @@ To enable website hosting with my S3 bucket, ' have to go to Properties tab and 
 
 An ACL is managing who can access and what type of files to upload in my bucket.
 
-![Image](http://learn.nextwork.org/easygoing_lavender_peaceful_durian/uploads/aws-host-a-website-on-s3_c22c54c0)
+![Image](./assets/SCR-20250205-npsr.png)
 
 ---
 
@@ -75,15 +71,15 @@ Once static website is enabled, S3 produces a bucket endpoint URL, which is the 
 
 When I first visited the bucket endpoint URL, I saw the 403 error message. The reason for this error was that the objectst that I uploaded are not made for public yet so I have to take action and make them public.
 
-![Image](http://learn.nextwork.org/easygoing_lavender_peaceful_durian/uploads/aws-host-a-website-on-s3_22ce4daf)
+![Image](./assets/SCR-20250205-nqaa.png)
 
 ---
 
 ## Success!
 
-To resolve this connection error, I have to go to Objects tab, select all the files I uploaded, go to Actions and select Make public using ACL. 
+To resolve this connection error, I have to go to Objects tab, select all the files I uploaded, go to Actions and select Make public using ACL.
 
-![Image](http://learn.nextwork.org/easygoing_lavender_peaceful_durian/uploads/aws-host-a-website-on-s3_5d4474f9)
+![Image](./assets/SCR-20250205-nqdy.png)
 
 ---
 
@@ -93,7 +89,7 @@ An Alternative to ACLs are bucket policies, which are conditions for managing fi
 
 My bucket policy that I set the file named index.html not to be deleted was saved. I tested this by trying to delete the file and saw the message that says 'Failed to delete objects'. This means the policy that I created worked.
 
-![Image](http://learn.nextwork.org/easygoing_lavender_peaceful_durian/uploads/aws-host-a-website-on-s3_sm2sm2sm)
+![Image](./assets/SCR-20250205-nqkl.png)
 
 ---
 
